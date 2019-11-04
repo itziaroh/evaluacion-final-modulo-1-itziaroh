@@ -2,12 +2,17 @@
     background-image: url(../images/cover.jpg);
     background-position-x: center;
     height: 100vh;
-    
+    @media (min-width:768px){
+        background-size: cover; 
+    }
     .menu_image{
         background-color: $cerulean;
         position: fixed;
         padding: 15px;
         transform: translateX(-15px);
+        @media (min-width:768px){
+            transform: translateX(-39px);
+        }
     }
     .hero{
         display: flex;
@@ -23,12 +28,21 @@
            line-height: 55px;
            text-align: center;
            padding-bottom: 5px;
+           @media (min-width:768px){
+               font-size: 5rem;
+               line-height: 106px;
+               padding-bottom: 10px;
+           }
         }
         &_text{
             color: $white;
             @include roboto-regular;
             font-size: 1rem;
             padding-top: 5px;
+            @media (min-width:768px){
+                font-size: 1.5rem;
+                padding-top: 10px;
+            }
         }
         &_btn{
             background-color: $white;
@@ -36,6 +50,10 @@
             padding: 15px;
             margin-top: 45px;
             margin-bottom: 53px;
+            @media (min-width:768px){
+                margin-top: 30px;
+                margin-bottom: 45px;
+            }
         }
     } 
 }
