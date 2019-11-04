@@ -1,0 +1,33 @@
+.header{
+    background-image: url(../images/cover.jpg);
+    height: 100vh;
+    .menu_image{
+        background-color: $cerulean;
+        position: fixed;
+        padding: 15px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &_title{
+           text-transform: uppercase; 
+           color: $white;
+           @include roboto-bold;
+           font-size: 2.625rem;
+           line-height: 55px;
+           text-align: center;
+        }
+        &_text{
+            color: $white;
+            @include roboto-regular;
+            font-size: 1rem;
+        }
+        &_btn{
+            background-color: $white;
+            border-radius: 100%;
+            padding: 15px;
+        }
+    } 
+}
