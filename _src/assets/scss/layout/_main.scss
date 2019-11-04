@@ -44,9 +44,7 @@
         border-radius: 22px;
         padding: 0 25px;
         text-transform: capitalize;
-        margin-bottom: 45px;
         @media (min-width:768px){
-            margin-bottom: 60px;
             padding: 0 33px;
         }
         @media (min-width:1280px){
@@ -60,16 +58,41 @@
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 45px;
+    @media (min-width:768px){
+        margin-top: 60px;
+        padding-left: 35.7px;
+        padding-right: 35.7px;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 27.7px;
+    }
+    @media (min-width:1280px){
+        padding-left: 81.2px;
+        padding-right: 85px;
+    }
     &-title{
         color: $black;
         @include roboto-bold;
         font-size: 1.5rem;
         line-height: 30px;
         margin-top: 30px;
+        margin-bottom: 45px;
         grid-column: span 4;
+        @media (min-width:768px){
+            font-size: 1.625rem;
+            line-height: 45px;
+            grid-column: span 3;
+        }
+        @media (min-width:1280px){
+            font-size: 2rem;
+            margin-top: 60px;
+        }
     }
     .reason_one{
         grid-column: 2/4;
+        @media (min-width:768px){
+            grid-column: 1/2;
+        }
         &-title{
             @include reasons-title;
         }
@@ -79,6 +102,9 @@
     }
     .reason_two{
         grid-column: 2/4;
+        @media (min-width:768px){
+            grid-column: 2/3;
+        }
         &-title{
             @include reasons-title;
         }
@@ -88,6 +114,9 @@
     }
     .reason_three{
         grid-column: 2/4;
+        @media (min-width:768px){
+            grid-column: 3/4;
+        }
         &-title{
             @include reasons-title;
         }
@@ -103,8 +132,16 @@
         font-size: 1.25rem;
         line-height: 45px;
         padding: 0 30px;
-        border-radius: 22.5px;
+        border-radius: 23px;
         height: 45px;
+        width: 100%;
         margin-bottom: 60px;
+        @media (min-width:768px){
+            grid-column: 2/3;
+            padding: 0 43px;
+        }
+        @media (min-width:1280px){
+            padding: 0 63px;
+        }
     }
 }
