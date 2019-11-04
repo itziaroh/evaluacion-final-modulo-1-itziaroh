@@ -31,3 +31,10 @@
         margin-bottom: 60px;
     }
 }
+@mixin item{
+    color: $white;
+    font-size: 1rem;
+    line-height: 30px;
+    @include roboto-regular;
+    text-align: center;
+}
