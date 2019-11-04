@@ -54,3 +54,57 @@
         }
     }
 }
+
+.section_two{
+    background-color: $ice-blue;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    &-title{
+        color: $black;
+        @include roboto-bold;
+        font-size: 1.5rem;
+        line-height: 30px;
+        margin-top: 30px;
+        grid-column: span 4;
+    }
+    .reason_one{
+        grid-column: 2/4;
+        &-title{
+            @include reasons-title;
+        }
+        &-text{
+            @include reasons-text;
+        }
+    }
+    .reason_two{
+        grid-column: 2/4;
+        &-title{
+            @include reasons-title;
+        }
+        &-text{
+            @include reasons-text;
+        }
+    }
+    .reason_three{
+        grid-column: 2/4;
+        &-title{
+            @include reasons-title;
+        }
+        &-text{
+            @include reasons-text;
+        }
+    }
+    &-btn{
+        grid-column: 2/4;
+        background-color: $bright-orange;
+        color: $white;
+        @include roboto-medium;
+        font-size: 1.25rem;
+        line-height: 45px;
+        padding: 0 30px;
+        border-radius: 22.5px;
+        height: 45px;
+        margin-bottom: 60px;
+    }
+}

@@ -10,3 +10,16 @@
     font-family: $roboto;
     font-weight: 400;
 }
+@mixin reasons-title{
+    color: $black;
+    font-size: 1.125rem;
+    line-height: 30px;
+    @include roboto-bold;
+}
+@mixin reasons-text {
+    color: $black;
+    font-size: 1.125rem;
+    line-height: 30px;
+    @include roboto-regular;
+    margin-bottom: 45px;
+}
