@@ -1,16 +1,20 @@
 .header{
     background-image: url(../images/cover.jpg);
+    background-position-x: center;
     height: 100vh;
+    
     .menu_image{
         background-color: $cerulean;
         position: fixed;
         padding: 15px;
+        transform: translateX(-15px);
     }
     .hero{
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        justify-content: flex-end;
+        height: 100vh; 
         &_title{
            text-transform: uppercase; 
            color: $white;
@@ -18,16 +22,20 @@
            font-size: 2.625rem;
            line-height: 55px;
            text-align: center;
+           padding-bottom: 5px;
         }
         &_text{
             color: $white;
             @include roboto-regular;
             font-size: 1rem;
+            padding-top: 5px;
         }
         &_btn{
             background-color: $white;
             border-radius: 100%;
             padding: 15px;
+            margin-top: 45px;
+            margin-bottom: 53px;
         }
     } 
 }
