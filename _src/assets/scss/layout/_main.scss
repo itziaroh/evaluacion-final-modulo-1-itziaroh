@@ -44,6 +44,11 @@
         border-radius: 22px;
         padding: 0 25px;
         text-transform: capitalize;
+        &:hover{
+            color: $white;
+            background: $bright-orange;
+            transition: ease 1s;
+        }
         @media (min-width:768px){
             padding: 0 33px;
         }
@@ -136,6 +141,10 @@
         height: 45px;
         width: 100%;
         margin-bottom: 60px;
+        &:hover{
+            transform: scale(1.1);
+            transition: ease 1s;
+        }
         @media (min-width:768px){
             grid-column: 2/3;
             padding: 0 43px;
