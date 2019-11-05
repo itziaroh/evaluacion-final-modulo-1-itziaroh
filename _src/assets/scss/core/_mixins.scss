@@ -38,6 +38,12 @@
     @include roboto-regular;
     text-align: center;
     text-transform: uppercase;
+    padding: 5px;
+    &:hover{
+        color: $dark-grey-blue;
+        background-color: $white;
+        border-radius: 8px;
+    }
 }
 @mixin copy{
     color: $white;
