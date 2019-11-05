@@ -37,4 +37,12 @@
     line-height: 30px;
     @include roboto-regular;
     text-align: center;
+    text-transform: uppercase;
+}
+@mixin copy{
+    color: $white;
+    font-size: 0.875rem;
+    line-height: 30px;
+    @include roboto-regular;
+    text-align: center;
 }

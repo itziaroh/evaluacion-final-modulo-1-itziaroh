@@ -1,14 +1,18 @@
 .footer{
-    background-color: $dark-grey-blue;
+    background: $dark-grey-blue;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 .arrow{
     background-color: $white;
     border-radius: 50%;
     padding:  10px 12px;
+    transform: translateY(-22px);
 }
 .navigation{
+    margin-bottom: 15px;
     &_list{
         color: $white;
         .item{
@@ -19,6 +23,7 @@
     }
 }
 .social_networks{
+    margin: 15px 0px;
     &-list{
         .item{
             &_link{
@@ -28,10 +33,13 @@
     }
 }
 .copyright{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
     &_year{
-
+        @include copy;
     }
     &_owner{
-
+        @include copy;
     }
 }
