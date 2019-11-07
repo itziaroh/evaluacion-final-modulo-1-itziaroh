@@ -1,10 +1,20 @@
 .section_one{
+    .titles{
+        @media (min-width:768px){
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
     .section_title-mini{
         color: $light-blue;
         @include roboto-regular;
         font-size: 0.875rem;
         line-height: 30px;
         margin-top: 30px;
+        @media (min-width:768px){
+            margin-top: 10px;
+        }
         @media (min-width:1280px){
             font-size: 1rem;
         }
@@ -24,6 +34,7 @@
     }
     &-text{
         color: $greyish-brown;
+        margin-bottom: 20px;
         @include roboto-regular;
         font-size: 1.125rem;
         line-height: 30px;
@@ -33,28 +44,11 @@
         @media (min-width:768px){
             font-size: 1.25rem;
             padding-top: 30px;
+            margin-bottom: 0px;
         }
     }
     &-btn{
-        color: $bright-orange;
-        @include roboto-medium;
-        font-size: 1.25rem;
-        line-height: 45px;
-        border: $bright-orange solid 2px;
-        border-radius: 22px;
-        padding: 0 25px;
-        text-transform: capitalize;
-        &:hover{
-            color: $white;
-            background: $bright-orange;
-            transition: ease 1s;
-        }
-        @media (min-width:768px){
-            padding: 0 33px;
-        }
-        @media (min-width:1280px){
-            padding: 0 67px;
-        }
+        @include btn;
     }
 }
 
